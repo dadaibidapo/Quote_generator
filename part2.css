@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:ital,wght@0,400;0,500;1,400;1,600&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,800;1,400;1,500&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* color: red; */
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    background:linear-gradient(rgba(32, 4, 53, 0.7), rgba(229, 49, 103, 0.7)),url('download.jpeg');
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.container{
+    width:70%;
+    /* max-width:800px; */
+    height: 50%;
+
+    /* background-color: aliceblue; */
+}
+
+.header{
+    font-size: 1rem;
+    border: 2px dashed #fff;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    color: #fff;
+    background-color: rgba(229, 49, 103, 0.7);
+    border-radius: 5px;
+    width: 80%;
+    margin: 0.5rem auto;
+}
+
+.main-content{
+    background-color: #fff;
+    height: 100%;
+    overflow: hidden;
+   border-radius: 1rem; 
+   padding: 3rem 1rem;
+   box-shadow: 0 0 15px  rgba(229, 49, 103, 0.7);
+   position: relative;
+}
+
+.main-content .text-area{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    word-spacing: 0.2rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.5rem;
+    /* transform: rotate(-120deg); */
+}
+
+/* .main-content:hover{
+    animation: animateText 6s linear infinite alternate forwards;
+    text-transform: capitalize;
+} */
+
+.main-content .person{
+    font-size: 1.7rem;
+    color: firebrick;
+    margin-bottom: 1.5rem;
+    /* text-decoration: uppercase; */
+    text-transform: uppercase;
+}
+
+#new-quote{
+    padding: 0.7rem;
+    /* margin-bottom: 1rem; */
+    cursor: pointer;
+    transition:.3s ease all ;
+    background-color: rgba(229, 49, 103);
+    outline: none;
+    border-radius: 1rem;
+    border:0.5px rgba(32, 4, 53, 0.3) soild ;
+    box-shadow: 0 0 15px  rgba(229, 49, 103, 0.7);
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+}
+
+#new-quote:active{
+    opacity:.8;
+}
+@media screen and (max-width:770px){
+    .header{
+        font-size: 0.5rem;        
+    }    
+    #new-quote{
+        font-size: 0.5rem;
+        position: absolute;
+        bottom: -5px;
+        left: 26%;
+        border-bottom:none ;
+    }
+    .main-content .text-area{
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+    .main-content .person{
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+}
